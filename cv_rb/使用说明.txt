@@ -1,0 +1,8 @@
+1、首先将 "***.xml"文件放入源代码文件夹
+2、使用如下方法调用，以"haarcascade_frontalface_default.xml"和"haarcascade_eye.xml"为例
+        实例化OpenCV人脸和眼睛识别的分类器
+	face_cas = cv.CascadeClassifier("haarcascade_frontalface_default.xml")
+	face_cas.load('haarcascade_frontalface_default.xml')
+
+	eyes_cas = cv.CascadeClassifier("haarcascade_eye.xml")
+	eyes_cas.load("haarcascade_eye.xml")
